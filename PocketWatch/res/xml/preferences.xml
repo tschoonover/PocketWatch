@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+    
+    <EditTextPreference
+         android:key="@string/pref_message_key"
+         android:summary="@string/pref_message_summary"
+         android:title="@string/pref_message_title"
+         android:defaultValue="@string/pref_message_default"/>
+    
+    <ListPreference
+        android:defaultValue="@string/pref_transmission_interval_default"
+        android:title="@string/pref_transmission_interval_title"
+        android:summary="@string/pref_transmission_interval_summary"
+        android:key="@string/pref_transmission_interval_key"
+        android:entryValues="@array/pref_transmission_interval_values"
+        android:entries="@array/pref_transmission_interval_entries"/>
+    
+    <CheckBoxPreference
+        android:summary="@string/pref_location_summary"
+        android:defaultValue="@string/pref_location_default"
+        android:title="@string/pref_location_title"
+        android:key="@string/pref_location_key"/>
+    
+    <org.section9.pocketwatch.ContactsDialogPreference
+        android:key="@string/pref_recipients_key"
+        android:title="@string/pref_recipients_title"
+        android:summary="@string/pref_recipients_summary"/>
+
+</PreferenceScreen>

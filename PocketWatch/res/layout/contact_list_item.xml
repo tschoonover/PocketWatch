@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<org.section9.pocketwatch.CheckableLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent">
+    
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_width="0dp"
+    	android:layout_weight="1"    	>
+	
+        <TextView
+		    android:id="@+id/contact_name"
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content" />
+        
+		<TextView
+		    android:id="@+id/contact_number"
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:textSize="10sp"
+			android:textColor="#666666" />
+	
+	</LinearLayout>
+
+	<CheckedTextView
+	    android:id="@+id/contact_selected"
+		android:layout_height="wrap_content"
+		android:layout_width="wrap_content"
+		android:checkMark="?android:attr/listChoiceIndicatorMultiple"/>
+
+</org.section9.pocketwatch.CheckableLinearLayout>
+

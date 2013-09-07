@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+	    
+	<org.section9.pocketwatch.IrregularShapeButton
+        android:id="@+id/PanicButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/panic_button_statelist"/> 
+	           
+	<TextView
+        android:id="@+id/InfoText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/PanicButton"
+        android:layout_centerHorizontal="true"
+        android:padding="10dp"
+        android:text="@string/control_panel_info_text"
+        android:gravity="center"
+        android:textAppearance="?android:attr/textAppearanceSmall" /> 
+	        
+</RelativeLayout>
